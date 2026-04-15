@@ -1,0 +1,30 @@
+{
+  "name": "sbom-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to ingest and query Software Bill of Materials (SBOMs)",
+  "main": "src/cli.ts",
+  "bin": {
+    "sbom-cli": "./bin/sbom-cli.js"
+  },
+  "scripts": {
+    "dev": "npx tsx src/cli.ts",
+    "ingest": "npx tsx src/cli.ts ingest",
+    "query": "npx tsx src/cli.ts query",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "Bruno Medeiros <bruno.am19@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "commander": "^14.0.3",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  }
+}
